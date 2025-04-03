@@ -4,75 +4,111 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Master DELICES</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header>
+    <header class="header">
         <h1>MASTER DELICES</h1>
-        <p>Bienvenue dans notre Restaurant où nous servons des plats délicieux préparés avec des ingrédients frais</p>
+        <ul class="nav">
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">A propos</a></li>
+            <li>Services</li>
+            <li>Contact</li>
+        </ul>
     </header>
-    <div>
-        <h2>Notre Menu</h2>
+
+    <div class="menu-container">
+        <h2 class="title">Notre Menu</h2>
+        
+        <!-- Section Entrées -->
         <section id="ENTREES">
             <h3>ENTREES</h3>
-            <UL>
-                <li><strong>Saucisse grillées</strong> 1200F</li>
-                <br>
-                <img src="image sg.webp" alt="Saucisse glillée" width="150">
-                <p>Saucisse grillée – Une saucisse juteuse et savoureuse, dorée à la perfection sur le gril, offrant une texture légèrement croustillante à l’extérieur et tendre à l’intérieur. Elle est souvent accompagnée de moutarde, de sauce barbecue ou d’herbes aromatiques pour rehausser son goût fumé. Servie seule, avec du pain, ou accompagnée de frites et de salade.</p>
-                <li><strong>soupe à l'oignon </strong>700F</li>
-                <br>
-                <img src="img soupe oig.jpeg" alt="soupe à l'oignon" width="150">
-                <p> Une soupe traditionnelle française préparée avec des oignons lentement caramélisés, mijotés dans un bouillon savoureux, puis gratinée au four avec une couche de fromage fondu sur une tranche de pain croustillant. Un plat réconfortant au goût riche et légèrement sucré.</p>
-                <li><strong>Salade César</strong> 1000F</li>
-                <br>
-                <img src="salade.jpg" alt="Salade César" width="150">
-                <p>Un plat sénégalais emblématique composé de poisson mariné et frit, accompagné de riz parfumé cuit dans une sauce tomate épicée. Agrémenté de légumes comme le chou, la carotte et le manioc, il offre un mélange de saveurs riches et authentiques, typique de la cuisine ouest-africaine.</p>
-            </UL>
+            <div class="card">
+                <img src="Images/image sg.webp" alt="Saucisse grillée" width="150">
+                <div class="card-content">
+                    <h4>Saucisse Grillée</h4>
+                    <p>1200F</p>
+                    <p>Saucisse grillée – Une saucisse juteuse et savoureuse, dorée à la perfection sur le gril, offrant une texture légèrement croustillante à l’extérieur et tendre à l’intérieur. Elle est souvent accompagnée de moutarde, de sauce barbecue ou d’herbes aromatiques pour rehausser son goût fumé. Servie seule, avec du pain, ou accompagnée de frites et de salade.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="Images/img soupe oig.jpeg" alt="Soupe à l'oignon" width="150">
+                <div class="card-content">
+                    <h4>Soupe à l'Oignon</h4>
+                    <p>700F</p>
+                    <p>Une soupe traditionnelle française préparée avec des oignons lentement caramélisés, mijotés dans un bouillon savoureux, puis gratinée au four avec une couche de fromage fondu sur une tranche de pain croustillant. Un plat réconfortant au goût riche et légèrement sucré.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="Images/salade.jpg" alt="Salade César" width="150">
+                <div class="card-content">
+                    <h4>Salade César</h4>
+                    <p>1000F</p>
+                    <p>Un plat sénégalais emblématique composé de poisson mariné et frit, accompagné de riz parfumé cuit dans une sauce tomate épicée. Agrémenté de légumes comme le chou, la carotte et le manioc, il offre un mélange de saveurs riches et authentiques, typique de la cuisine ouest-africaine.</p>
+                </div>
+            </div>
         </section>
-        <section id="PLATS PRINCIPAUX">
+
+        <!-- Section Plats principaux -->
+        <section id="PLATS_PRINCIPAUX">
             <h3>PLATS PRINCIPAUX</h3>
-            <ul>
-                <li><strong>Thiébou djién</strong> 1300F</li>
-                <br>
-                <img src="thieb.jpg" alt="Thiebou djien" width="150">
-                <p>Un plat sénégalais emblématique composé de poisson mariné et frit, accompagné de riz parfumé cuit dans une sauce tomate épicée. Agrémenté de légumes comme le chou, la carotte et le manioc, il offre un mélange de saveurs riches et authentiques, typique de la cuisine ouest-africaine.</p>
-                <li><strong>Filet de boeuf</strong> 
-                    2500</li>
-                <br>
-                <img src="filet.jpg" alt="Flet de boeuf" width="100">
-                <p>Un morceau tendre et raffiné de bœuf, connu pour sa texture fondante et son goût délicat. Il est généralement grillé ou poêlé à la perfection, avec une cuisson au choix, et accompagné d’une sauce au poivre, aux champignons ou au beurre maître d’hôtel. Servi avec des légumes sautés, une purée onctueuse ou des frites dorées.</p>
-                <br>
-                <LI><strong>Poulet grillé</strong> 3000F</LI>
-                <br>
-                <img src="poulet.jpg" alt="Poulet grillé" width="150">
-                <P> Un délicieux morceau de poulet mariné aux épices, grillé à la perfection pour une peau croustillante et une chair tendre et juteuse. Il est souvent accompagné d’une sauce au citron, à l’ail ou aux herbes, et servi avec des légumes rôtis, du riz parfumé ou des frites dorées.
-                </P>
-                
-            </ul>
+            <div class="card">
+                <img src="Images/thieb.jpg" alt="Thiebou djien" width="150">
+                <div class="card-content">
+                    <h4>Thiébou Djien</h4>
+                    <p>1300F</p>
+                    <p>Un plat sénégalais emblématique composé de poisson mariné et frit, accompagné de riz parfumé cuit dans une sauce tomate épicée. Agrémenté de légumes comme le chou, la carotte et le manioc, il offre un mélange de saveurs riches et authentiques, typique de la cuisine ouest-africaine.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="Images/filet.jpg" alt="Filet de boeuf" width="150">
+                <div class="card-content">
+                    <h4>Filet de Boeuf</h4>
+                    <p>2500F</p>
+                    <p>Un morceau tendre et raffiné de bœuf, connu pour sa texture fondante et son goût délicat. Il est généralement grillé ou poêlé à la perfection, avec une cuisson au choix, et accompagné d’une sauce au poivre, aux champignons ou au beurre maître d’hôtel. Servi avec des légumes sautés, une purée onctueuse ou des frites dorées.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="Images/poulet.jpg" alt="Poulet grillé" width="150">
+                <div class="card-content">
+                    <h4>Poulet Grillé</h4>
+                    <p>3000F</p>
+                    <p>Un délicieux morceau de poulet mariné aux épices, grillé à la perfection pour une peau croustillante et une chair tendre et juteuse. Il est souvent accompagné d’une sauce au citron, à l’ail ou aux herbes, et servi avec des légumes rôtis, du riz parfumé ou des frites dorées.</p>
+                </div>
+            </div>
         </section>
+
+        <!-- Section Desserts -->
         <section id="DESSERTS">
             <h3>DESSERTS</h3>
-            <ul>
-                <li><strong>Fondant au chocolat</strong> 700F</li>
-                    <br>
-                    <img src="chocolat.jpg" alt="fondant au chocolat" width="150">
-                    <p>moelleux au chocolat avec un coeur fondant et coulant accompagné d'une boule de glace à la vanille</p>
-                    <br>
-                    <li><strong>Crème brulée</strong> 800F</li>
-                    <br>
-                    <img src="creme brulée.jpg" alt="crème brulée" width="100">
-                    <p>Dessert à base de crème vanillée cuite et recouverte d'une fine couche de sucre caramélisé croquant</p>
-                    <br>
-                    <li><strong>Profiteroles</strong> 1000F</li>
-                    <br>
-                    <img src="Profiteroles.jpg" alt="Profoteroles" width="150">
-                    <p>De petites choux garnis de crème patissère ou de glace à la vanille, nappés de chocolat</p>
-            </ul>
-
+            <div class="card">
+                <img src="Images/chocolat.jpg" alt="Fondant au chocolat" width="150">
+                <div class="card-content">
+                    <h4>Fondant au Chocolat</h4>
+                    <p>700F</p>
+                    <p>Moelleux au chocolat avec un cœur fondant et coulant, accompagné d'une boule de glace à la vanille.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="Images/creme brulée.jpg" alt="Crème Brulée" width="150">
+                <div class="card-content">
+                    <h4>Crème Brulée</h4>
+                    <p>800F</p>
+                    <p>Dessert à base de crème vanillée cuite et recouverte d'une fine couche de sucre caramélisé croquant.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="Images/Profiteroles.jpg" alt="Profiteroles" width="150">
+                <div class="card-content">
+                    <h4>Profiteroles</h4>
+                    <p>1000F</p>
+                    <p>De petites choux garnis de crème pâtissière ou de glace à la vanille, nappés de chocolat.</p>
+                </div>
+            </div>
         </section>
-        
     </div>
+
     <footer>
         <h2>Contact</h2>
         <p>Adresse: Rufisque RN1</p>
